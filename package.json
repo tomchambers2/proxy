@@ -1,0 +1,16 @@
+{
+  "name": "Proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "proxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Chambers",
+  "license": "ISC",
+  "dependencies": {
+    "follow-redirects": "0.0.3",
+    "promise": "^5.0.0",
+    "web": "0.0.2"
+  }
+}
