@@ -1,1 +1,1 @@
-web: node proxy.js
+web: bin/proximo node proxy.js
