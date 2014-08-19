@@ -59,4 +59,5 @@ function requestHandler(request, response) {
 
 var server = http.createServer(requestHandler);
 
-server.listen(8080);
+var port = Number(process.env.PORT || 8080);
+server.listen(port);
