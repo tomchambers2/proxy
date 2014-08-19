@@ -36,7 +36,7 @@ function getData(urlToFetch) {
 function requestHandler(request, response) {
 	requestedUrl = url.parse(request.url, true).query.url;
 
-	response.setHeader('Access-Control-Allow-Origin', 'http://localhost:9000');
+	response.setHeader('Access-Control-Allow-Origin', 'http://tomchambers2.github.io');
     // Request methods you wish to allow
     response.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     // Request headers you wish to allow
