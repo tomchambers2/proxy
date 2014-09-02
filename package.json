@@ -13,5 +13,12 @@
     "newrelic": "^1.10.0",
     "promise": "^5.0.0",
     "web": "0.0.2"
+  },
+  "subdomain": "moviehunterproxy",
+  "scripts": {
+    "start": "proxy.js"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
