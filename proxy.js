@@ -36,7 +36,11 @@ function getData(urlToFetch) {
 function requestHandler(request, response) {
 	requestedUrl = url.parse(request.url, true).query.url;
 
-	response.setHeader('Access-Control-Allow-Origin', 'http://moviehunter.co.uk');
+	console.log(request.headers);
+
+	response.setHeader('Access-Control-Allow-Origin', '*');
+
+	response.setHeader('Access-Control-Request-Method', '*');
     // Request methods you wish to allow
     response.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     // Request headers you wish to allow
@@ -59,5 +63,5 @@ function requestHandler(request, response) {
 
 var server = http.createServer(requestHandler);
 
-var port = Number(process.env.PORT || 8080);
+var port = Number(process.env.PORT || 9080);
 server.listen(port);
